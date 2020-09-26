@@ -32,7 +32,7 @@ const Home = (props) => (
         <Collapse
           shadow
           title="Your Access QR Code"
-          subtitle="Without this you want be able to enter."
+          subtitle="Without this you won't be able to enter the movie."
           style={{ marginBottom: "30px", background: 'hsl(0,0%,98%)' }}
         >
           <img src={props.events[0].ticket} />
