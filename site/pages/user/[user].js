@@ -58,9 +58,6 @@ const Home = (props) => (
             <strong>Location:</strong> Gymnasium
           </Text>
           <Text>
-            <strong>Movie:</strong> TBD
-          </Text>
-          <Text>
             <strong>Contact Email:</strong>{" "}
             <a href="mailto:23samuel.p@gwa.edu.sg">23samuel.p@gwa.edu.sg</a>
           </Text>
