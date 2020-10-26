@@ -46,7 +46,7 @@ const Home = (props) => (
             <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
            <iframe
              class="airtable-embed airtable-dynamic-height"
-             src={"https://airtable.com/embed/shr8L0i2uayfVZxdg?prefill_Ticket%20ID="+{{props.events[0].id}}
+             src={"https://airtable.com/embed/shr8L0i2uayfVZxdg?prefill_Ticket%20ID="+props.events[0].id}
              frameborder="0"
              onmousewheel=""
              width="403"
