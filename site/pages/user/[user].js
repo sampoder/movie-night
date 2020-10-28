@@ -32,7 +32,7 @@ const Home = (props) => (
         <Collapse
           shadow
           title="Your Access QR Code"
-          subtitle="Without this you won't be able to enter the movie."
+          subtitle="Without this you won't be able to enter."
           style={{ marginBottom: "30px", background: 'hsl(0,0%,98%)' }}
         >
           <img src={props.events[0].ticket} />
@@ -43,22 +43,23 @@ const Home = (props) => (
           subtitle="This will become available on the day."
           style={{  background: 'hsl(0,0%,98%)', marginBottom: "30px", }}
         >
-          <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-          <iframe
-            class="airtable-embed airtable-dynamic-height"
-            src={"https://airtable.com/embed/shr8L0i2uayfVZxdg?prefill_Ticket%20ID="+'recxRtuyvaRcJgvTE'}
-            frameborder="0"
-            onmousewheel=""
-            width="403"
-            height="1443"
-            style={{
-              background: "transparent",
-              position: "relative",
-              top: "-140px",
-              left: "-2rem",
-              marginBottom: "-170px",
-            }}
-          ></iframe>
+            <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+           <iframe
+             class="airtable-embed airtable-dynamic-height"
+             src={"https://airtable.com/embed/shr8L0i2uayfVZxdg?prefill_Ticket%20ID="+props.events[0].id}
+             frameborder="0"
+             onmousewheel=""
+             width="403"
+             height="1443"
+             style={{
+               background: "transparent",
+               position: "relative",
+               top: "-140px",
+               left: "-2rem",
+               marginBottom: "-170px",
+             }}
+           ></iframe>
+          
         </Collapse>
         <Collapse
           shadow
@@ -71,9 +72,6 @@ const Home = (props) => (
           </Text>
           <Text>
             <strong>Location:</strong> Gymnasium
-          </Text>
-          <Text>
-            <strong>Movie:</strong> TBD
           </Text>
           <Text>
             <strong>Contact Email:</strong>{" "}
